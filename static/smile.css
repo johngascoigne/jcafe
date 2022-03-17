@@ -9,6 +9,11 @@ body {
     background-color: rgba(236, 240, 241, 1.0);
 }
 
+main {
+    text-align: center;
+    align-content: center;
+}
+
 header {
     padding-top: 1em;
 }
