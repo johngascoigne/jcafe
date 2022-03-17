@@ -1,5 +1,5 @@
 * {
-    font-family: 'Consolas', monospace;
+    font-family: 'Arial', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -44,13 +44,13 @@ h2 {
 }
 
 nav {
-    background-color: rgba(44, 62, 80, 1.0); /* darkest blue */
+    background-color: rgb(44, 48, 44); /* darkest blue */
     text-align: center;
     /*color: rgba(52, 152, 219, 1.0);!*light blue*!*/
     font-size: 1.5rem;
     padding-top: 0.4rem;
     padding-bottom: 0.7rem;
-    color: rgba(52, 152, 219, 1.0); /*light blue*/
+    color: rgb(255, 251, 0); /*light blue*/
 }
 
 .navbar-brand {
@@ -73,13 +73,13 @@ nav a {
 }
 
 nav a:hover {
-    color: rgba(44, 62, 80, 1.0);
-    background-color: rgba(52, 152, 219, 1.0);
-    border-bottom: 3px solid rgba(52, 152, 219, 1.0);
+    color: rgb(236, 239, 236);
+    background-color: rgb(234, 142, 255);
+    border-bottom: 3px solid rgb(234, 142, 255);
 }
 
 a, a:visited {
-    color: rgba(52, 152, 219, 1.0);
+    color: inherit;
     /*color:hotpink;*/
     text-decoration: none;
 }
@@ -93,26 +93,37 @@ a, a:visited {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+.box-container {
+    margin: 0;
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
 
 .product-box {
-    width: 10vw;
-    width: 20%;
-    float: left;
-    display: table-cell;
-    padding: 0.25rem;
+    width: 25%;
+    height: fit-content;
+    padding: 1rem;
     margin: 0.5vw;
     border: 1px solid rgba(189, 195, 199, 1.0);
     color: rgba(44, 62, 80, 1.0);
     margin-bottom: 0.25rem;
+
+
 }
 
 .product-box-heading {
     padding: 0.5rem;
 }
 
-.product-box-image {
-    height: 150px;
-    overflow: hidden;
+.product-box > img {
+    height: 25rem;
+    margin-top: 1rem
 }
 
 .product-box-info {
@@ -206,3 +217,4 @@ table {
         width: 100%;
     }
 }
+

@@ -6,8 +6,8 @@ menu
 
 {% block main %}
     <main>
+        <div class="box-container">
         {% for product in products %}
-
         <div class="product-box">
             <h3>{{ product[0] }}</h3>
             <p>{{ product[1] }}</p>
@@ -16,6 +16,8 @@ menu
             <img src="static/images/{{ product[3] }}.jpg">
         </div>
 
+
         {% endfor %}
+        </div>
     </main>
 {% endblock %}
