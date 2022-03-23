@@ -19,7 +19,6 @@ header {
 }
 
 
-
 .container {
     width: 60vw;
     margin: auto;
@@ -100,6 +99,7 @@ a, a:visited {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
 .box-container {
     margin: 0;
     width: 75%;
@@ -110,7 +110,8 @@ a, a:visited {
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%) }
+    transform: translate(-50%, -50%)
+}
 
 .product-box {
     width: 25%;
